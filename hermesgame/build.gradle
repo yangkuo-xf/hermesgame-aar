@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 
 apply plugin: 'com.github.dcendents.android-maven'
 //hermesgame-aar
-group='com.github.yangkuo-xf'
+group='com.github.hermesgame-aar'
 
 android {
     compileSdkVersion 29
