@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+        android:layout_width="326dp"
+        android:layout_height="330dp"
+    skin:enable="true"
+        android:background="@drawable/qg_fragment_base_bg_big"
+        android:orientation="vertical">
+
+    <com.hermesgamesdk.view.QGTitleBar
+            android:id="@+id/qg_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-5dp"
+            app:imagePadding="10dp"
+            app:imageSize="@dimen/qg_layout_height"
+            app:textColor="@color/qg_title_text_color"
+            app:textSize="18sp"
+            app:title="@string/qg_phonebind_bind_phonenumb" />
+
+    <TextView
+            android:id="@+id/tv_pay_amount"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="$178.00"
+            android:textColor="#EEA2AD"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    <WebView
+            android:id="@+id/iv_scanpay"
+            android:layout_width="148dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+
+    <TextView
+            android:id="@+id/tv_pay_message"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:text="微信扫一扫"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+    <!--按钮-->
+    <Button
+            android:id="@+id/qg_ensure_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qg_layout_height"
+            android:background="@drawable/qg_btn_selector"
+        skin:enable="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/qg_phonebind_updata"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/qg_big_text_size" />
+
+
+</LinearLayout>

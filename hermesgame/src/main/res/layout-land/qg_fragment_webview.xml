@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+                android:layout_width="match_parent"
+              android:orientation="vertical"
+                android:layout_height="match_parent">
+
+    <com.hermesgamesdk.view.QGTitleBar
+            android:id="@+id/qg_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-5dp"
+            app:imagePadding="10dp"
+            android:visibility="gone"
+            app:imageSize="@dimen/qg_layout_height"
+            app:textSize="18sp"
+            app:title="用户协议"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:background="@color/qg_white">
+        <ImageView android:layout_width="14dp"
+                   android:layout_centerVertical="true"
+                   android:id="@+id/qg_agreement_cancle_button"
+                   android:layout_marginLeft="18dp"
+                   android:background="@drawable/qg_dialog_back"
+                   android:layout_height="17dp"/>
+        <TextView
+                android:id="@+id/qg_webview_title"
+                android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textColor="@color/qg_light_black"
+                  android:textSize="18sp"
+                  android:text=""/>
+
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/qg_light_gray2"></View>
+   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:background="@color/qg_white"
+           android:paddingTop="10dp"
+           android:paddingRight="20dp"
+           android:paddingLeft="20dp"
+             android:paddingBottom="8dp">
+       <WebView
+               android:id="@+id/qg_webview"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@color/qg_black">
+       </WebView>
+   </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/qg_agreement_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/qg_refuse_agreement"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#FF515151"
+                android:gravity="center"
+                android:text="@string/qg_user_protocol_refuse"
+                android:textColor="#FFADADAD"
+                android:textSize="18sp"/>
+
+        <Button
+                android:id="@+id/qg_accept_agreement"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/qg_light_orange2"
+                android:gravity="center"
+                android:text="@string/qg_user_protocol_ok"
+            skin:enable="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

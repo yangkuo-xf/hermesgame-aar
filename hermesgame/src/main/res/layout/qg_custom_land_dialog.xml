@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <include layout="@layout/custom_port_dialog_action_bar"/>
+    <RelativeLayout
+        android:id="@+id/container_icon"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+
+        <ImageView
+            android:id="@+id/qg_goto_other"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:src="@drawable/qg_logo_othertype"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+</RelativeLayout>

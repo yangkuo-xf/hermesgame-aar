@@ -1,0 +1,15 @@
+<resources>
+    <!--布局大小-->
+    <dimen name="qg_layout_width">320dp</dimen>
+    <dimen name="qg_layout_height">38dp</dimen>
+    <dimen name="qg_layout_padding">12dp</dimen>
+
+    <!--控件间隔-->
+    <dimen name="qg_margin_top_of_line">8dp</dimen>
+    <dimen name="qg_margin_top_of_button">16dp</dimen>
+
+    <!--文字大小-->
+    <dimen name="qg_small_text_size">15sp</dimen>
+    <dimen name="qg_big_text_size">20sp</dimen>
+
+</resources>

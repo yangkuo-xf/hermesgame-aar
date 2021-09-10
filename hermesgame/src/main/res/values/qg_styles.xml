@@ -1,0 +1,136 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+    </style>-->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="qg_dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+
+    </style>
+
+    <style name="qg_dialog_style_fullscreen" parent="@style/qg_dialog_style">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="qg_dialog_style_fullscreen_notfloat" parent="@style/qg_dialog_style">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+    <style name="qg_slider_activity_anim">
+      <!--  <item name="android:inAnimation"></item>
+        <item name="android:outAnimation"></item>-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/slider_anim</item>
+    </style>
+
+    <style name="slider_anim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_bar_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_bar_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_bar_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_bar_out</item>
+
+      <!--  <item name="android:windowEnterAnimation">@anim/slide_bar_in</item>
+        <item name="android:inAnimation">@anim/slide_bar_in</item>
+        <item name="android:outAnimation">@anim/slide_bar_out</item>
+        <item name="android:windowExitAnimation">@anim/slide_bar_out</item>-->
+    </style>
+    <style name="qg_fullscreen_style">
+     <item name="android:windowFrame">@null</item>
+     <item name="android:windowIsFloating">false</item>
+     <item name="android:windowIsTranslucent">true</item>
+     <item name="android:windowNoTitle">true</item><!--除去title-->
+     <item name="android:windowContentOverlay">@null</item>
+     <item name="android:backgroundDimEnabled">false</item>
+     <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+     <item name="android:windowBackground">@android:color/transparent</item>
+     <item name="android:windowFullscreen">true</item>
+    </style>
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="left_to_right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="QGTitleBar">
+        <attr name="imagePadding" format="dimension"></attr>
+        <attr name="title" format="string"></attr>
+        <attr name="textColor" format="color"></attr>
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="imageSize" format="dimension"></attr>
+        <attr name="mImagePadding" format="dimension"></attr>
+    </declare-styleable>
+
+    <style name="qg_edit_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">#FFCACBCB</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/qg_ed_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@drawable/qg_cursor_style</item>
+    </style>
+
+<!--   <style name="NoActivityAnimationTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/QG_Animation</item>
+    </style>
+
+    <style name="QG_Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>-->
+
+</resources>

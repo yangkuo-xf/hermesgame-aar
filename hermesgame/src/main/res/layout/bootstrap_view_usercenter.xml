@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/userCenterLinearLayout"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/tds_bg_gray_radius_8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <com.tds.common.widgets.image.TdsRoundImageView
+                android:id="@+id/avatarRoundImageView"
+                android:layout_width="44dp"
+                android:layout_height="44dp" />
+
+            <ImageView
+                android:id="@+id/tapIconImageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignRight="@id/avatarRoundImageView"
+                android:layout_alignBottom="@id/avatarRoundImageView"
+                android:src="@drawable/tds_ic_tap_logo_mini"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/logoutImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tds_ic_logout"
+                android:scaleType="center"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@id/logoutImageView"
+                android:layout_toRightOf="@id/avatarRoundImageView">
+
+                <include layout="@layout/bootstrap_view_usercenter_user_info_area" />
+
+                <include layout="@layout/bootstrap_view_usercenter_preloading" />
+
+                <include layout="@layout/bootstrap_view_usercenter_refresh_area" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+        <tds.androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="12dp"
+            android:id="@+id/tdsComponentsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tds_bg_white_radius_8dp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-8dp"
+        android:layout_toRightOf="@id/userCenterLinearLayout">
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/tds_btn_close" />
+    </FrameLayout>
+</RelativeLayout>

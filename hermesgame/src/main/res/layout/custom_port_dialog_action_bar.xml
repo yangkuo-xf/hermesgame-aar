@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="一键登录"
+        android:textColor="#ff333333"
+        android:textSize="18sp"
+        android:gravity="center"
+
+        />
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+       android:background="@drawable/qg_dialog_close"
+        android:scaleType="fitXY"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

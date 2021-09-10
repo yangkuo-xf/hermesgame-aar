@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+        android:id="@+id/layout_find_password"
+        android:layout_width="326dp"
+        android:layout_height="290dp"
+    skin:enable="true"
+        android:layout_gravity="center"
+        android:background="@drawable/qg_fragment_base_bg_mid"
+        android:orientation="vertical">
+
+    <com.hermesgamesdk.view.QGTitleBar
+            android:id="@+id/qg_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            app:imagePadding="11dp"
+            app:imageSize="@dimen/qg_layout_height"
+            app:textColor="@color/qg_title_text_color"
+            app:textSize="18sp"
+            app:title="@string/qg_certification_name_authentication" />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            <TextView
+                    android:id="@+id/ed_title_realname"
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/qg_certification_real_name"
+                    android:textColor="@color/qg_light_orange2"
+                skin:enable="true"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+        </LinearLayout>
+        <!--真实姓名-->
+        <com.hermesgamesdk.view.QGEditText
+                android:id="@+id/qg_ed_real_name"
+                style="@style/qg_edit_style"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/qg_certification_real_name"
+                android:inputType="text" />
+
+        <Button
+                android:id="@+id/qg_line_realname"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+                android:enabled="false" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            <TextView
+                    android:id="@+id/ed_title_idcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/qg_certification_real_name_id"
+                    android:textColor="@color/qg_light_orange2"
+                skin:enable="true"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+        </LinearLayout>
+        <!--身份证号-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+            <com.hermesgamesdk.view.QGEditText
+                    android:id="@+id/qg_ed_identifying_code"
+                    style="@style/qg_edit_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789xX"
+                    android:hint="@string/qg_certification_real_name_id" />
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/qg_line_idcode"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+                android:enabled="false" />
+
+        <!--手机号-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qg_layout_height"
+                android:layout_marginTop="@dimen/qg_margin_top_of_line"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+            <com.hermesgamesdk.view.QGEditText
+                    android:id="@+id/qg_ed_phonenumber_code"
+                    style="@style/qg_edit_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789"
+                    android:hint="@string/qg_certification_phonenumber_id" />
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cecfcf"
+                android:visibility="gone" />
+
+
+        <!--提交按钮-->
+        <Button
+                android:id="@+id/qg_btn_submit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qg_layout_height"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/qg_certification_updata"
+                android:textColor="@drawable/qg_login_button_txt_selector"
+                android:textSize="16sp" />
+
+        <!--文字-->
+        <TextView
+        	    android:id="@+id/qg_certification_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/qg_certification_message"
+                android:textColor="@color/qg_light_orange2"
+            skin:enable="true"
+                android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

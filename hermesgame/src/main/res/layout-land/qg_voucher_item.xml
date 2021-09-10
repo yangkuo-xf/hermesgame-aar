@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/qg_voucher_item_bg"
+        android:background="@drawable/qg_voucher_item_background"
+        android:layout_width="186dp"
+        android:layout_height="94dp">
+        <ImageView
+            android:id="@+id/qg_voucher_item_check"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/qg_voucher_item_check_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/qg_voucher_item_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:text="¥3"
+            android:textColor="@color/qg_btn_white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/qg_voucher_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/qg_voucher_item_amount"
+            android:layout_centerHorizontal="true"
+
+            android:gravity="center_vertical"
+            android:text="消费满28元使用"
+            android:textColor="@color/qg_btn_white"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/qg_voucher_item_timelimit"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="消费满28元使用"
+            android:layout_marginBottom="9dp"
+            android:textColor="@color/qg_light_gray3"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

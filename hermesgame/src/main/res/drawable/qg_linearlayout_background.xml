@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="#FF774E"></solid>
+
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#E4e4e4"></solid>
+
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#de5a32"></solid>
+
+            <corners android:radius="3dp" />
+        </shape>
+    </item>-->
+<item android:state_enabled="true">
+    <shape>
+        <solid android:color="@color/qg_try_play_layout_bg">
+        </solid>
+        <corners android:radius="20dp"></corners>
+    </shape>
+</item>
+
+</selector>
+
+

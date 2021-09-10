@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="326dp"
+    android:layout_height="330dp"
+    android:background="@drawable/qg_fragment_base_bg_big"
+    android:orientation="vertical">
+
+    <com.hermesgamesdk.view.QGTitleBar
+        android:id="@+id/qg_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:imagePadding="11dp"
+        app:imageSize="@dimen/qg_layout_height"
+        app:textSize="18sp"
+        app:textColor="@color/qg_title_text_color"
+        app:title="选择小号"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <TextView
+                android:text="玩家 "
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/qg_switch_account_main_uid"
+                android:text="123456"
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                android:textColor="@color/qg_light_orange2"
+                skin:enable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <TextView
+                android:text="欢迎回来"
+                android:layout_marginLeft="6dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/qg_main_account_enter"
+                android:text="    进入 >"
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/qg_light_orange2"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+ <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="30dp">
+     <TextView
+         android:text="其他账号"
+         android:textSize="12sp"
+         android:layout_gravity="center_vertical"
+         android:layout_marginLeft="30dp"
+         android:textColor="#999999"
+         android:layout_width="wrap_content"
+
+         android:layout_height="20dp"/>
+     <TextView
+         android:id="@+id/qg_add_account"
+         android:text="+创建小号"
+         android:textSize="16sp"
+         android:layout_marginLeft="30dp"
+         android:textColor="#3d81e0"
+         android:layout_width="match_parent"
+         android:gravity="right"
+         android:layout_gravity="center_vertical"
+         android:layout_marginRight="20dp"
+         android:layout_height="match_parent"/>
+ </LinearLayout>
+    </LinearLayout>
+
+    <ListView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qg_switch_account_listview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:background="@color/qg_white"
+        android:padding="5dp"
+        android:divider="@color/qg_white">
+    </ListView>
+
+</LinearLayout>

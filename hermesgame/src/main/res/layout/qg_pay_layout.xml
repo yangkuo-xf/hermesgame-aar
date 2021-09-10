@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:background="@color/qg_white"
+                  android:orientation="vertical">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:background="@color/qg_light_white">
+        <LinearLayout
+                android:id="@+id/qg_pay_cancle_button"
+                android:layout_width="53dp"
+
+                android:layout_height="match_parent">
+            <ImageView android:layout_width="16dp"
+                      android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/qg_icon_close"
+                       android:layout_height="16dp"/>
+        </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/qg_light_black"
+                      android:textSize="18sp"
+                      android:text="@string/qg_pay"/>
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/qg_light_gray2"></View>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.45">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"            
+                          android:background="@color/qg_white"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="20dp"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="31dp"
+                              android:gravity="center"
+                              >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/qg_goods_name"
+                              android:text="商品:"
+                              android:textSize="16sp"
+                              android:textColor="@color/qg_light_black"
+                    ></TextView>
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="15dp"
+                              android:gravity="center"
+                              android:layout_gravity="bottom"
+                             >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="14sp"
+                              android:text="¥ "
+                              android:textStyle="bold"
+                              android:layout_gravity="bottom"
+                              android:textColor="@color/qg_dark_orange"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="24sp"
+                              android:id="@+id/qg_amount"
+                              android:textStyle="bold"
+                              android:layout_gravity="bottom"
+                              android:textColor="@color/qg_dark_orange"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="@string/qg_pay_yuan"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/qg_dark_orange"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginTop="15dp"
+                              android:layout_gravity="center_horizontal"
+                              android:layout_marginLeft="25dp">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text=""
+                              android:id="@+id/qg_rabate"
+                              android:textSize="15sp"
+                              android:textColor="@color/qg_light_gray5"
+                              android:layout_gravity="top"
+                    ></TextView>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="15dp"
+                              android:textColor="@color/qg_light_gray5"
+                              android:id="@+id/qg_pay_way"
+                              android:textSize="15sp"
+                              android:layout_gravity="bottom"
+                              android:text="支付方式:   "/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/qg_voucher_jump_layout"
+            android:layout_width="match_parent"
+            android:background="@color/qg_white"
+            android:orientation="horizontal"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/qg_white"
+                android:gravity="center"
+                android:text="@string/qg_cash"
+                android:textColor="@color/qg_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/qg_voucher_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textStyle="bold"
+                android:focusable="false"
+                android:textSize="12sp"
+                android:text="@string/qg_have_voucher"
+                android:layout_height="44dp"/>
+
+            <ImageView
+                android:id="@+id/qg_voucher_jump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:focusable="false"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/qg_right_in" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="43dp"
+                      android:background="@color/qg_light_gray">
+            <TextView android:layout_width="wrap_content"
+                      android:text="@string/qg_choose_pay_way"
+                      android:gravity="center"
+                      android:layout_marginLeft="20dp"
+                      android:textColor="@color/qg_light_gray5"
+                      android:textSize="16sp"
+                      android:layout_height="match_parent"
+                    />
+        </LinearLayout>
+        <ListView android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.6"
+                  android:id="@+id/qg_payType_lv"
+                  android:dividerHeight="0dp"
+                  android:background="@color/qg_white"
+                  android:scrollbars="none"
+                  android:padding="8dp"
+                  android:divider="@color/qg_white">
+
+        </ListView>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="56dp"
+
+                      android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="0.7"
+                          android:background="@color/qg_light_gray6">
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/qg_light_gray6"
+                        android:text="@string/qg_pay_real_amount"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:textColor="@color/qg_white"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:text=""
+                          android:id="@+id/qg_real_amount"
+                          android:textColor="@color/qg_white"
+                          android:gravity="center"
+                          android:textSize="18sp"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="0.3">
+                <Button android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/qg_light_orange2"
+
+                    skin:enable="true"
+                        android:id="@+id/qg_btn_startPay"
+                        android:text="@string/qg_startpay_pay"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/qg_white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/qg_pay_success_layoutbg"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/qg_loading_dialog_img"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:background="@drawable/qg_loading_dialog_anim"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/qg_pay_success_txt"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:text="正在查询订单"
+        android:layout_height="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="326dp"
+    android:layout_height="290dp"
+     android:layout_marginBottom="65dp"
+    android:layout_gravity="center"
+    android:background="@drawable/qg_fragment_base_bg_mid"
+    android:focusable="true"
+
+    android:fitsSystemWindows="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.hermesgamesdk.view.QGTitleBar
+        android:id="@+id/qg_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:imagePadding="11dp"
+        app:imageSize="@dimen/qg_layout_height"
+        app:textSize="18sp"
+        app:textColor="@color/qg_title_text_color"
+        app:title="@string/qg_sdkcoin_pay"/>
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:orientation="horizontal"
+         android:layout_gravity="center"
+         android:layout_marginTop="12dp"
+         android:layout_height="wrap_content">
+         <TextView
+             android:textColor="@color/qg_black"
+             android:textSize="24sp"
+             android:layout_gravity="top"
+             android:text="￥"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <TextView
+             android:id="@+id/qg_sdkcoins_amount"
+             android:textColor="@color/qg_black"
+             android:textSize="42sp"
+             android:text="100.00"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="支付方式"
+                android:textColor="@color/qg_light_gray3"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/qg_pay_way_sdkcoins"
+                android:layout_marginLeft="75dp"
+                android:gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/qg_sdkcoins_balance"
+                android:text="余额：(100.00)"
+                android:textColor="@color/qg_light_gray5"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <com.hermesgamesdk.view.PassWordEditText
+            android:id="@+id/qg_sdkcoins_edit"
+            android:layout_marginTop="15dp"
+            android:layout_width="273dp"
+            android:layout_gravity="center"
+            android:maxLength="6"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_height="48dp"/>
+        <TextView
+            android:layout_marginTop="9dp"
+            android:id="@+id/qg_sdkcoins_forgetPassword"
+            android:textSize="14sp"
+            android:textColor="@color/qg_light_gray3"
+            android:layout_gravity="right"
+            android:text="忘记密码?"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+</LinearLayout>

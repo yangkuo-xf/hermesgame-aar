@@ -1,0 +1,3 @@
+rootProject.name = "hermesgameOld"
+include ':app'
+include ':hermesgame'

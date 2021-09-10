@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="qgColorGray">#cecfcf</color>
+    <color name="qgColorBlue">#289DFB</color>
+
+    <color name="qg_reply_button_disable">#27c298</color>
+    <color name="qg_reply_button_text">#dfFFFFFF</color>
+    <color name="qg_reply_button_text_disable">#ffffff</color>
+
+    <color name="qg_text_primary">#df000000</color>
+    <color name="qg_transparent">#00000000</color>
+    <color name="qg_dark_gray">#393a3e</color>
+    <color name="qg_dark_green">#19ad17</color>
+
+    <color name="qg_black">#000000</color>
+    <color name="qg_dark_blue">#ffffff</color>
+
+    <color name="qg_light_blue">#3d81e0</color>
+    <color name="qg_red">#dc5e5e</color>
+    <color name="qg_green">#0cad95</color>
+
+
+    <color name="qg_white">#FFFFFF</color>
+    <color name="qg_light_white">#66ffffff</color>
+    <color name="qg_light_white2">#ffFFFFFF</color>
+
+
+    <color name="qg_dark_orange">#FFFF450E</color>
+    <color name="qg_light_orange">#FFEE9C00</color>
+    <color name="qg_light_orange2">#FF774e</color>
+    <color name="qg_light_orange3">#de5a32</color>
+
+
+    <color name="qg_light_black">#FF333333</color>
+<!--
+    <color name="qg_light_gray">#FFEAEAEA</color>
+    <color name="qg_light_gray2">#FFD7D7D7</color>
+    <color name="qg_light_gray3">#FFADADAD</color>
+    <color name="qg_light_gray4">#FF939393</color>
+    <color name="qg_light_gray5">#FF7A7A7A</color>
+    <color name="qg_light_gray6">#ff515151</color>-->
+
+    <color name="qg_btn_white">#FFFFFF</color>
+    <color name="qg_light_gray">#FFEAEAEA</color>
+    <color name="qg_light_gray2">#FFD7D7D7</color>
+    <color name="qg_light_gray3">#FFADADAD</color>
+    <color name="qg_light_gray4">#FF939393</color>
+    <color name="qg_light_gray5">#FF7A7A7A</color>
+    <color name="qg_light_gray6">#ff515151</color>
+
+    <color name="qg_dark_red">#FFCE1D32</color>
+
+
+	
+    <!--其他登录方式-->
+    <color name="qg_login_other">#939393</color>
+    <color name="qg_login_other_line">#FFEAEAEA</color>
+    <!--文字高亮？-->
+    <color name="qg_text_low_light">#747474</color>
+    <!--标题-->
+    <color name="qg_title_text_color">#333333</color>
+    <!--输入框字体颜色-->
+    <color name="qg_ed_text_color">#000000</color>
+    <!--输入框隐藏字体颜色-->
+    <color name="qg_ed_hint_text_color">#CACBCB</color>
+    <!--线体颜色-->
+    <color name="qg_ed_line_has_text">#EAEAEA</color>
+    <!--按钮文字状态-->
+    <color name="qg_btn_text_enable_true">#FFFFFF</color>
+    <color name="qg_btn_text_enable_fasle">#909090</color>
+    <!--按钮颜色-->
+    <color name="qg_btn_enable_false">#E4E4E4</color>
+    <color name="qg_btn_holo_solid">#FFFFFF</color>
+
+    <!--验证码状态-->
+    <color name="qg_btn_code_enable">#FF333333</color>
+    <color name="qg_btn_code_false">#EEEEEF</color>
+    <!--验证码文字状态-->
+    <color name="qg_text_code_true">#FFFFFF</color>
+    <color name="qg_text_code_false">#CACBCB</color>
+    <!--自动登录-->
+    <color name="qg_text_auto_login">#FF333333</color>
+    <color name="qg_auto_login_text_welcome">#FF333333</color>
+    <color name="qg_auto_login_text_uid">#333333</color>
+    <!--试玩-->
+    <color name="qg_try_play_layout_bg">#F2F2F2</color>
+    <color name="qg_try_play_text">#333333</color>
+    <!--注册-->
+    <color name="qg_text_regist">#939393</color>
+  
+
+
+
+
+</resources>

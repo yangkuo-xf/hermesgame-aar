@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+              android:id="@+id/layout_find_password"
+              android:layout_width="326dp"
+              android:layout_height="270dp"
+              android:background="@drawable/qg_fragment_base_bg_small"
+    skin:enable="true"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <com.hermesgamesdk.view.QGTitleBar
+            android:id="@+id/qg_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            app:imagePadding="11dp"
+            app:textColor="@color/qg_title_text_color"
+            app:imageSize="@dimen/qg_layout_height"
+            app:textSize="18sp"
+            app:title=""/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:background="@drawable/qg_base_bottom_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/ed_title_active_code"
+                    android:textColor="@color/qg_light_orange2"
+                skin:enable="true"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:text="@string/qg_active_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.hermesgamesdk.view.QGEditText
+                android:id="@+id/qg_ed_active"
+                style="@style/qg_edit_style"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/qg_active_prompt">
+        </com.hermesgamesdk.view.QGEditText>
+
+        <Button
+                android:id="@+id/qg_line_active_code"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:enabled="false"
+            skin:enable="true"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/qg_btn_selector"/>
+
+        <Button
+                android:id="@+id/qg_active"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qg_layout_height"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+                android:gravity="center"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/qg_active"
+                android:textColor="@drawable/qg_login_button_txt_selector"
+                android:enabled="false"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/active_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/qg_gain_acive_code"
+                android:textColor="@color/qg_light_gray5"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="19dp"
+                android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>

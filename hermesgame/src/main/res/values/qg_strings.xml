@@ -1,0 +1,289 @@
+<resources>
+    <string name="app_name">hermesgameSDK</string>
+    <string name="input_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_.</string>
+
+    <string name="qg_exit_realy_exit">确认退出游戏吗？</string>
+    <string name="qg_exit_exit_cancel">取消</string>
+    <string name="qg_exit_exit_yes">确认退出</string>
+
+    <string name="qg_login_input_username">用户名</string>
+    <string name="qg_login_input_userpsw">密码</string>
+    <string name="qg_login_register">立即注册</string>
+    <string name="qg_login_loss_psw">忘记密码</string>
+    <string name="qg_login_login">登录</string>
+    <string name="qg_login_other_login_way">其他登录方式</string>
+    <string name="qg_login_attempt_play">一键试玩</string>
+    <string name="qg_login_phonenumb_login">手机登录</string>
+    <string name="qg_login_account_login">账号登录</string>
+
+
+    <string name="qg_register_input_username">用户名（4-20位，数字，字母）</string>
+    <string name="qg_register_input_userpsw">密码（6-20位，数字，字母）</string>
+    <string name="qg_register_register">注册</string>
+    <string name="qg_register_agree">注册即同意</string>
+    <string name="qg_register_user_protocol">《用户协议》</string>
+    <string name="qg_register_user_private">《隐私协议》</string>
+    <string name="qg_register_account_register">账号注册</string>
+    <string name="qg_register_nextstep">下一步</string>
+
+    <string name="qg_autologin_username">账号</string>
+    <string name="qg_autologin_timer">自动登录中</string>
+    <string name="qg_autologin_switch_account">切换账号</string>
+
+    <string name="qg_certification_name_authentication">实名认证</string>
+
+    <string name="qg_certification_message">按照《国家新闻出版署关于防止未成年人沉迷网络游戏的通知》的相关要求，网络游戏用户需要使用有效身份证进行实名认证，方可支付。</string>
+    <string name="qg_certification_real_name">姓名</string>
+    <string name="qg_certification_real_name_id">身份证号</string>
+    <string name="qg_certification_phonenumber_id">手机号</string>
+    <string name="qg_certification_updata">提交</string>
+
+    <string name="qg_findpsw_reset">重置密码</string>
+    <string name="qg_findpsw_input_phonenumb">手机号</string>
+    <string name="qg_findpsw_input_verificationcode">验证码</string>
+    <string name="qg_findpsw_get_verificationcode">获取验证码</string>
+    <string name="qg_findpsw_input_newpsw">新密码</string>
+    <string name="qg_findpsw_updata">确认</string>
+
+    <string name="qg_modifypsw_reset_password">修改密码</string>
+    <string name="qg_modifypsw_oldpsw">旧密码</string>
+    <string name="qg_modifypsw_newpsw">新密码</string>
+    <string name="qg_modifypsw_confirmpsw">确认密码</string>
+    <string name="qg_modifypsw_updata">提交</string>
+
+    <string name="qg_phonebind_bind_phonenumb">手机号绑定</string>
+    <string name="qg_phonebind_input_phonenumb">手机号</string>
+    <string name="qg_phonebind_input_verificationcode">验证码</string>
+    <string name="qg_phonebind_get_verificationcode">获取验证码</string>
+    <string name="qg_phonebind_updata">提交</string>
+    <string name="qg_phonebind_failure">该号码已被绑定,请更换新的手机号码</string>
+
+
+    <string name="qg_phonelogin_input_phonrnumb">手机号</string>
+    <string name="qg_phonelogin_input_verificationcode">短信验证码</string>
+    <string name="qg_phonelogin_get_verificationcode">获取验证码</string>
+    <string name="qg_phonelogin_login">登录</string>
+    <string name="qg_phonelogin_agree">登录即同意</string>
+
+    <string name="qg_phonelogin_phone_login">手机号登录</string>
+    <string name="qg_add_account_inputusername">请设置用户名</string>
+    <string name="qg_phoneunbind_phone_unbind">解绑手机</string>
+    <string name="qg_phoneunbind_notice">为了您的账号安全，解绑手机需要进行短信验证。</string>
+
+    <string name="qg_phoneunbind_phone_numb">手机号</string>
+    <string name="qg_phoneunbind_input_verificationcode">验证码</string>
+    <string name="qg_phoneunbind_get_verificationcode">获取验证码</string>
+    <string name="qg_phoneunbind_unbind">解绑</string>
+
+    <string name="qg_startpay_goodsname">商品:</string>
+    <string name="qg_startpay_chose_pay_way">选择支付方式</string>
+    <string name="qg_startpay_alipay">支付宝支付</string>
+    <string name="qg_startpay_alipayweb">支付宝网页版</string>
+    <string name="qg_startpay_weixinpay">微信支付</string>
+
+    <string name="qg_sdkcoin_pay">请输入支付密码</string>
+    <string name="qg_pls_check_cash">选择代金券</string>
+    <string name="qg_dissable_cash">以下代金券不可用</string>
+    <string name="qg_startpay_check_orderinfo">确认订单</string>
+    <string name="qg_scanpay_title">扫码付款</string>
+    <string name="qg_scanpay_type_wechat">微信扫一扫</string>
+    <string name="qg_scanpay_type_ali">支付宝扫一扫</string>
+    <string name="qg_scanpay_already">支付完毕</string>
+    <string name="qg_scanpay_postresult">正在查询支付结果，请稍等</string>
+
+
+    <string name="qg_tryplay_notice">温馨提示</string>
+    <string name="qg_tryplay_save">保存</string>
+    <string name="qg_tryplay_username">用户名</string>
+    <string name="qg_tryplay_psw">密码</string>
+    <string name="qg_tryplay_notice_msg">绑定手机号码,可在忘记密码或账号被盗时找回！</string>
+    <string name="qg_tryplay_enter_game">进入游戏</string>
+    <string name="qg_tryplay_bind_phone">绑定手机</string>
+
+    <string name="qg_usercenter_user_center">用户中心</string>
+    <string name="qg_usercenter_user_name">登录账号</string>
+    <string name="qg_usercenter_phone_numb">手机号码</string>
+    <string name="qg_usercenter_not_bind">未绑定</string>
+    <string name="qg_usercenter_unbind">解绑</string>
+    <string name="qg_usercenter_name_authentication">实名认证</string>
+    <string name="qg_usercenter_not_authentication">未认证</string>
+    <string name="toast_text_array_authentication">已认证</string>
+    <string name="qg_usercenter_reset_password">修改密码</string>
+    <string name="qg_usercenter_reset">修改</string>
+    <string name="qg_usercenter_logout">退出登录</string>
+    <string name="qg_usercenter_user_protocol">《用户协议》</string>
+    <string name="qg_usercenter_account">account</string>
+    <string name="qg_usercenter_version">version</string>
+    <string name="qg_usercenter_setup_username">设置用户名</string>
+    <string name="qg_usercenter_setup">设置</string>
+
+
+    <string name="qg_setup_username">设置用户名</string>
+    <string name="qg_setup_prompt">试玩玩家可以自定义用户名和密码</string>
+    <string name="qg_setup_bind_success">绑定账号成功</string>
+    <string name="qg_setup_empty_prompt">密码不能为空</string>
+    <string name="qg_setup_passwd_verify">两次输入密码不一致</string>
+    <string name="qg_setup_input_again">确认密码</string>
+
+    <string name="qg_useragreement">用户协议</string>
+
+    <string name="qg_gifts_center">礼包中心</string>
+
+    <string name="string_notice_name_authentication">实名认证</string>
+    <string name="string_notice_reget_verificationcode_60seconds_latter">60S后重新获取</string>
+    <string name="string_notice_reget_verificationcode_xseconds_latter">S</string>
+
+    <string name="bassfragment_get_verificationcode">获取验证码</string>
+
+    <string name="toast_text_error">错误</string>
+    <string name="toast_text_input_phonenumb">请输入手机号</string>
+    <string name="toast_text_error_msg_unllname">真实姓名或身份证号不能为空</string>
+    <string name="toast_text_error_msg_cert">请输入正确的实名信息</string>
+    <string name="toast_text_authentication_success">认证成功</string>
+    <string name="toast_text_input_verificationcode">请输入验证码</string>
+    <string name="toast_text_get_verificationcode_failed">获取用户数据失败</string>
+    <string name="toast_text_bind_success">绑定成功</string>
+    <string name="toast_text_binded">该账号已绑定手机</string>
+
+    <string name="toast_text_bind_failed">绑定失败:</string>
+    <string name="toast_text_input_username">请输入账号</string>
+    <string name="toast_text_input_psw">请输入密码</string>
+    <string name="toast_text_register_notice_length_error">密码长度应为6-20位</string>
+    <string name="toast_text_register_notice_short_psw">密码长度不够</string>
+    <string name="toast_text_register_psw_success">密码重置成功</string>
+    <string name="toast_text_function_not_worked">该功能暂时不可用</string>
+    <string name="toast_text_print_screen_success">截图成功，保存路径为:</string>
+    <string name="toast_text_diffrent_input">两次输入不一致</string>
+    <string name="toast_text_reset_success">修改成功</string>
+    <string name="toast_text_get_userinfo_failed">获取用户数据失败</string>
+    <string name="toast_text_phone_unbind_success">解绑成功</string>
+    <string name="toast_text_phone_unbind_failed">解绑失败</string>
+    <string name="toast_text_already_authentication">已认证</string>
+    <string name="toast_text_not_authentication">未认证</string>
+    <string name="toast_text_net_error">获取数据失败,请检查网络</string>
+    <string name="toast_text_getInternet_error">请求失败,请检查网络</string>
+    <string name="toast_text_not_init">请先初始化</string>
+    <string name="toast_text_not_login">请先登录</string>
+    <string name="toast_text_have_no_weixin">请安装微信</string>
+
+    <string name="toast_text_result_not_Json">请求结果为非json类型:</string>
+    <string name="toast_text_JSON_parsing_failure">JSON解析失败</string>
+
+    <string name="toast_text_paycancel">支付取消</string>
+    <string name="toast_text_payfailed">支付取消</string>
+
+    <string name="toast_text_pay_unknow_result">支付结果未知（有可能已经支付成功），请查询商户订单列表中订单的支付状态</string>
+    <string name="toast_text_pay_indeal">正在处理中，支付结果未知（有可能已经支付成功），请查询商户订单列表中订单的支付状态</string>
+    <string name="toast_text_pay_failed_need_install_alipay">订单支付失败,请安装支付宝</string>
+    <string name="toast_text_pay_failed_much">请勿重复请求</string>
+    <string name="toast_text_pay_failed_need_install_aweixinpay">请安装微信</string>
+
+
+    <string name="qk_freeservices_tocs">客服</string>
+
+
+    <string name="qg_active_prompt">请输入激活码</string>
+    <string name="qg_active">立即激活</string>
+    <string name="qg_active_title">游戏激活码</string>
+    <string name="qg_gain_acive_code">如何获取游戏激活码?</string>
+    <string name="qg_bbs">论坛</string>
+    <string name="qg_install">安装</string>
+    <string name="qg_down">更新</string>
+    <string name="qg_download_game">游戏更新</string>
+    <string name="qg_download_tips">更新提示</string>
+    <string name="qg_download_cancel">取消更新</string>
+    <string name="qg_download_again">重新下载</string>
+    <string name="qg_download_failure">下载失败</string>
+    <string name="qg_exit_prompt">再次点击退出社区</string>
+    <string name="qg_notice">游戏公告</string>
+    <string name="qg_login_emt_limit">当前游戏暂不支持模拟器登录，请使用手机设备，如有疑问请咨询游戏客服。</string>
+
+    <string name="qg_display_notice">查看</string>
+    <string name="qg_sure">确定</string>
+    <string name="qg_try_play_tips">为了便于找回账号，我们将游客账号信息以图片的形式存入到你的系统相册中，请勿删除。</string>
+    <string name="qg_bind_failed_tips">\t\t此手机号已绑定其他账号，请切换绑定手机号码或者进行用户名绑定!</string>
+    <string name="qg_prompt">提示</string>
+    <string name="toast_text_register_account_not_number">账号不能为11位数字</string>
+    <string name="qg_accept_agreement">接受</string>
+    <string name="qg_refuse_agreement">拒绝</string>
+    <string name="qk_useragreement_user_agreement">用户协议</string>
+    <string name="qk_priavateagreement_priavate_agreement">隐私协议</string>
+    <string name="toast_text_pay_failed_need_install_weixinpay">请安装微信</string>
+
+
+    <string name="qg_send">发送</string>
+
+    <string name="qg_pick_photo">选择图片</string>
+    <string name="qg_save_photo">保存图片</string>
+    <string name="qg_photo">图片</string>
+
+    <string name="qg_at_least_one">至少选择一张图片</string>
+
+    <string name="qg_send_pic">发送(0/9)</string>
+    <string name="qg_at_most_nine">最多选择9张图片</string>
+    <string name="qg_photo_preview">图片预览</string>
+
+    <string name="qg_refresh">刷新</string>
+    <string name="qg_close">关闭</string>
+    <string name="qg_load_erro">数据加载失败,请检查网络.</string>
+    <string name="qg_pay">支付</string>
+    <string name="qg_cash">我的优惠</string>
+    <string name="qg_have_voucher">您有可使用代金券</string>
+    <string name="qg_dont_have_voucher">暂无可使用代金券</string>
+    <string name="qg_voucher_desc">元代金券</string>
+    <string name="qg_choose_pay_way">选择支付方式</string>
+    <string name="qg_choose_pay_cash">我的优惠</string>
+    <string name="qg_pay_real_amount">实付金额： </string>
+    <string name="qg_voucher_limittime">有效期至：</string>
+    <string name="qg_startpay_pay">立即支付</string>
+    <string name="qg_user_protocol">用户协议</string>
+    <string name="qg_limited_title">防沉迷</string>
+    <string name="qg_add_account_title">创建小号</string>
+    <string name="qg_user_protocol_refuse">不同意</string>
+    <string name="qg_user_protocol_ok">同意</string>
+    <string name="qg_try_play_tips_title">提示</string>
+    <string name="qg_try_play_account">账号:</string>
+    <string name="qg_try_play_password">密码:</string>
+    <string name="qg_try_play_bind">绑定手机</string>
+    <string name="qg_try_play_tips_msg">请妥善保存好您的账号信息</string>
+    <string name="qg_unbind_phonenum">手机号</string>
+
+    <string name="qg_unbind_code">验证码</string>
+    <string name="qg_downloading_tips">正在下载游戏安装包，请稍等...</string>
+
+    <string name="qg_account_name">账号</string>
+    <string name="qg_account_password">密码</string>
+    <string name="qg_active_code">激活码</string>
+    <string name="qg_no_account">没有账号?</string>
+
+    <string name="qg_onekey_play">一键试玩</string>
+
+    <string name="qg_unbind_mobile_tips">解绑后您将不能通过手机验证码登录，为避免您的账号信息丢失，在解除手机绑定的同时，我们将引导您设置当前账号的密码及登录用户名，在解除绑定后，您可以使用此用户名密码登录当前账号并继续您的游戏进度。</string>
+
+    <string name="qg_limit_message">    各省、自治区、直辖市新闻出版局，各网络游戏企业，有关行业组织：
+    近年来，网络游戏行业在满足群众休闲娱乐需要、丰富人民精神文化生活的同时，也出现一些值得高度关注的问题，特别是未成年人沉迷网络游戏、过度消费等现象，对未成年人身心健康和正常学习生活造成不良影响，社会反映强烈。规范网络游戏服务，引导网络游戏企业切实把社会效益放在首位，有效遏制未成年人沉迷网络游戏、过度消费等行为，保护未成年人身心健康成长，是贯彻落实习近平总书记关于青少年工作重要指示精神、促进网络游戏繁荣健康有序发展的有效举措。现就有关工作事项通知如下。
+    一、实行网络游戏用户账号实名注册制度。所有网络游戏用户均须使用有效身份信息方可进行游戏账号注册。自本通知施行之日起，网络游戏企业应建立并实施用户实名注册系统，不得以任何形式为未实名注册的新增用户提供游戏服务。自本通知施行之日起2个月内，网络游戏企业须要求已有用户全部完成实名注册，对未完成实名注册的用户停止提供游戏服务。对用户提供的实名注册信息，网络游戏企业必须严格按照有关法律法规妥善保存、保护，不得用作其他用途。
+    网络游戏企业可以对其游戏服务设置不超过1小时的游客体验模式。在游客体验模式下，用户无须实名注册，不能充值和付费消费。对使用同一硬件设备的用户，网络游戏企业在15天内不得重复提供游客体验模式。
+    二、严格控制未成年人使用网络游戏时段、时长。每日22时至次日8时，网络游戏企业不得以任何形式为未成年人提供游戏服务。网络游戏企业向未成年人提供游戏服务的时长，法定节假日每日累计不得超过3小时，其他时间每日累计不得超过1.5小时。
+    三、规范向未成年人提供付费服务。网络游戏企业须采取有效措施，限制未成年人使用与其民事行为能力不符的付费服务。网络游戏企业不得为未满8周岁的用户提供游戏付费服务。同一网络游戏企业所提供的游戏付费服务，8周岁以上未满16周岁的用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上未满18周岁的用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。
+    四、切实加强行业监管。本通知前述各项要求，均为网络游戏上网出版运营的必要条件。各地出版管理部门要切实履行属地监管职责，严格按照本通知要求做好属地网络游戏企业及其网络游戏服务的监督管理工作。对未落实本通知要求的网络游戏企业，各地出版管理部门应责令限期改正；情节严重的，依法依规予以处理，直至吊销相关许可。各地出版管理部门协调有关执法机构做好监管执法工作。
+    五、探索实施适龄提示制度。网络游戏企业应从游戏内容和功能的心理接受程度、对抗激烈程度、可能引起认知混淆程度、可能导致危险模仿程度、付费消费程度等多维度综合衡量，探索对上网出版运营的网络游戏作出适合不同年龄段用户的提示，并在用户下载、注册、登录页面等位置显著标明。有关行业组织要探索实施适龄提示具体标准规范，督促网络游戏企业落实适龄提示制度。网络游戏企业应注意分析未成年人沉迷的成因，并及时对造成沉迷的游戏内容、功能或者规则进行修改。
+    六、积极引导家长、学校等社会各界力量履行未成年人监护守护责任，加强对未成年人健康合理使用网络游戏的教导，帮助未成年人树立正确的网络游戏消费观念和行为习惯。
+   七、本通知所称未成年人是指未满18周岁的公民，所称网络游戏企业含提供网络游戏服务的平台。</string>
+
+
+    <string name="qg_autologin_seconds">秒</string>
+    <string name="qg_account_regist">用户名注册</string>
+    <string name="qg_account_regist_lengthshort">账号长度应为4-20位</string>
+    <string name="qg_choose_littleaccount">选择小号</string>
+    <string name="qg_pay_goodsname">商品</string>
+    <string name="qg_pay_paytype">支付方式</string>
+    <string name="qg_pay_rate_no">折      扣 :   无折扣</string>
+    <string name="qg_pay_rate">折      扣</string>
+    <string name="qg_account_welcome">欢迎</string>
+    <string name="qg_pay_yuan">元</string>
+
+
+
+
+</resources>

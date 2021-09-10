@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:background="@drawable/qg_marqueetext_back"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:focusable="false"
+    android:gravity="center_horizontal"
+    android:layout_height="30dp">
+    <com.hermesgamesdk.view.MarqueeView
+        android:id="@+id/marqueeView"
+        android:layout_width="220dp"
+        android:focusable="true"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp" />
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/umcsdk_return_bg" />
+</LinearLayout>

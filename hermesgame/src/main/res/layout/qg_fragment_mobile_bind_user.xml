@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+
+    skin:enable="true"
+    android:layout_width="326dp"
+    android:layout_height="330dp"
+    android:background="@drawable/qg_fragment_base_bg_big"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.hermesgamesdk.view.QGTitleBar
+        android:id="@+id/qg_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:imagePadding="11dp"
+        app:imageSize="@dimen/qg_layout_height"
+        app:textColor="@color/qg_title_text_color"
+        app:textSize="18sp"
+        app:title="@string/qg_setup_username" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="21dp"
+
+            android:paddingRight="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/ed_title_user_bind_phone"
+                    android:textColor="@color/qg_light_orange2"
+                    skin:enable="true"
+                    android:textSize="12sp"
+                    android:text="当前解绑手机号"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_height="wrap_content">
+                <!--手机号-->
+                <com.hermesgamesdk.view.QGEditText
+                    android:id="@+id/qg_phone_user_bind_num"
+                    style="@style/qg_edit_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="@string/qg_phonebind_input_phonenumb"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="11"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/qg_line_user_bind_phone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:enabled="false"
+                style="?android:attr/borderlessButtonStyle"
+                skin:enable="true"
+                android:background="@drawable/qg_btn_selector"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/ed_title_user_bind_setaccount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/qg_account_name"
+                android:textColor="@color/qg_light_orange2"
+                skin:enable="true"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <com.hermesgamesdk.view.QGEditText
+                android:id="@+id/qg_bind_user_bind_username"
+                style="@style/qg_edit_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:digits="@string/input_digits"
+                android:hint="@string/qg_register_input_username"
+                android:maxLength="20"
+                android:maxLines="1" />
+
+
+        </LinearLayout>
+        <!-- 分割线 -->
+
+        <Button
+            android:id="@+id/qg_line_user_bind_setaccount"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+            android:enabled="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/ed_title_user_bind_setpwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/qg_account_password"
+                android:textColor="@color/qg_light_orange2"
+                skin:enable="true"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- 密码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:orientation="horizontal">
+
+            <com.hermesgamesdk.view.QGEditText
+                android:id="@+id/qg_bind_user_bind_password"
+                style="@style/qg_edit_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:digits="@string/input_digits"
+                android:hint="@string/qg_register_input_userpsw"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/qg_line_user_bind_setpwd"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+            android:enabled="false" />
+
+
+        <!-- 登录按钮 -->
+
+        <Button
+            android:id="@+id/qg_user_bind_confirm"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@drawable/qg_login_button_txt_selector"
+            android:textSize="16sp" />
+            <LinearLayout
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="18dp">
+                <CheckBox
+                    android:id="@+id/qg_cb_photo_picker_item"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:button="@null"
+                    android:background="@drawable/qg_photo_picker_item_selector"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="将新账号截图保存至相册"
+                    android:textColor="@color/qg_light_gray3"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="18dp"/>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

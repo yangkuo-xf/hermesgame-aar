@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_photo_picker_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/qg_dark_blue">
+        <Button
+            android:id="@+id/btn_photo_picker_back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/qg_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qg_pick_photo"
+            android:textColor="@color/qg_white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btn_photo_picker_back"/>
+        <Button
+            android:id="@+id/btn_photo_picker_send"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/qg_send_pic"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/qg_reply_button_text_disable"
+            android:background="@drawable/qg_shape_button_reply_button_unclickable"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_photo_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:listSelector="@color/qg_transparent">
+    </GridView>
+
+</LinearLayout>

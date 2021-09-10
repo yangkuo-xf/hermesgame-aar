@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/qg_white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/qg_light_white2"
+        android:orientation="vertical">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@color/qg_light_white">
+            <LinearLayout
+
+                android:layout_width="53dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/qg_voucher_cancle_button"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="18dp"
+                    android:background="@drawable/qg_icon_close"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/qg_light_black"
+                android:textSize="18sp"
+                android:text="@string/qg_cash"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/qg_pls_check_cash"
+            android:textColor="@color/qg_light_gray3"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <GridView
+            android:id="@+id/qg_voucher_grid"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:numColumns="1"
+            android:verticalSpacing="30dp"
+            android:horizontalSpacing="10dp">
+        </GridView>
+    </LinearLayout>
+    <LinearLayout
+
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/qg_dissable_cash"
+            android:textColor="@color/qg_light_gray3"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <GridView
+            android:id="@+id/qg_voucher_grid_dissable"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp">
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

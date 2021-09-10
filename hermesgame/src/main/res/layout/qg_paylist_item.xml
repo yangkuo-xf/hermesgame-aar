@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/qg_payType_item"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/qg_payType_icon"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp" />
+
+            <TextView
+                android:id="@+id/qg_payType_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:text="@string/qg_startpay_weixinpay"
+                android:textColor="@color/qg_light_black"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/qg_sdkcoinsNum"
+                    android:text="余额 (¥562.15)"
+                    android:layout_centerVertical="true"
+                    android:textColor="#717171"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/qg_payRate_img"
+                        android:layout_width="42dp"
+                        android:layout_height="19dp"
+                        android:background="@drawable/qg_rebate_icon"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/qg_payRate_num"
+                        android:layout_width="42dp"
+                        android:layout_height="19dp"
+                        android:background="@drawable/qg_rebate_icon"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:text="9折折折"
+                        android:textColor="@color/qg_dark_red"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+            <!-- gougou -->
+
+            <ImageView
+                android:id="@+id/qg_payType_check"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/qg_choose_pay_way_null"
+                android:gravity="center"
+                android:scaleType="fitCenter"></ImageView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/qg_light_gray">
+
+        </View>
+    </LinearLayout>
+
+</LinearLayout>

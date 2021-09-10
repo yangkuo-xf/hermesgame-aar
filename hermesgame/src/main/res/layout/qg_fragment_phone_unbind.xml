@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+        android:layout_width="326dp"
+        android:layout_height="270dp"
+    skin:enable="true"
+        android:background="@drawable/qg_fragment_base_bg_small"
+        android:orientation="vertical">
+
+    <com.hermesgamesdk.view.QGTitleBar
+            android:id="@+id/qg_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            app:imagePadding="11dp"
+            app:imageSize="@dimen/qg_layout_height"
+            app:textColor="@color/qg_title_text_color"
+            app:textSize="18sp"
+            app:title="@string/qg_phoneunbind_phone_unbind" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp">
+
+        <!--提示-->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qg_layout_height"
+                android:layout_marginTop="@dimen/qg_margin_top_of_line"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="@string/qg_phoneunbind_notice"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/qg_small_text_size"
+                android:visibility="gone" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                <TextView
+                        android:id="@+id/ed_title_pNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/qg_unbind_phonenum"
+                        android:textColor="@color/qg_light_orange2"
+                    skin:enable="true"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <!--手机号-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:orientation="horizontal">
+
+                <com.hermesgamesdk.view.QGEditText
+                        android:id="@+id/qg_phone_unbind_num"
+                        style="@style/qg_edit_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="@string/qg_phoneunbind_phone_numb"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="11" />
+
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/qg_line_pNum"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/qg_btn_selector"
+                skin:enable="true"
+                    android:enabled="false" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp">
+
+                    <TextView
+                            android:id="@+id/ed_title_pCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/qg_unbind_code"
+                            android:textColor="@color/qg_light_orange2"
+                        skin:enable="true"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                </LinearLayout>
+
+                <!--验证码-->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                            <com.hermesgamesdk.view.QGEditText
+                                    android:id="@+id/qg_phone_unbind_identify"
+                                    style="@style/qg_edit_style"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical|left"
+                                    android:layout_weight="1"
+                                    android:hint="@string/qg_phoneunbind_input_verificationcode"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:maxLength="6" />
+                        </LinearLayout>
+
+                        <Button
+                                android:id="@+id/qg_line_pCode"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@drawable/qg_btn_selector"
+                            skin:enable="true"
+                                android:enabled="false" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                            android:id="@+id/qg_phone_unbind_identify_button"
+                            android:layout_width="89dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/qg_btn_get_identifying_code_selector"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:text="@string/qg_phonebind_get_verificationcode"
+                            android:textColor="@drawable/qg_get_identifying_code_text_color_selector"
+                            android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <!--按钮-->
+                <Button
+                        android:id="@+id/qg_phone_unbind_submit"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/qg_layout_height"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="36dp"
+                        android:background="@drawable/qg_btn_selector"
+                    skin:enable="true"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text="@string/qg_phoneunbind_unbind"
+                        android:textColor="@drawable/qg_login_button_txt_selector"
+                        android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

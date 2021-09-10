@@ -1,0 +1,392 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hermesgame" >
+
+
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!--选择头像-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--OAID-->
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+    <uses-permission android:name="freemme.permission.msa" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        >
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+
+        <!-- 测试 -->
+
+
+        <!-- SDK  配置开始 -->
+
+
+        <provider
+            android:name="com.hermesgamesdk.QGFileProvider"
+            android:authorities="${applicationId}.qgfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"
+                />
+        </provider>
+
+        <service android:name="com.hermesgamesdk.gamebox.service.DownloadService"/>
+
+        <receiver android:name="com.hermesgamesdk.gamebox.receive.AppInstallReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <activity
+            android:name="com.hermesgamesdk.activity.LoginActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/qg_dialog_style_fullscreen" />
+        <activity
+            android:name="com.hermesgamesdk.activity.PayActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/qg_fullscreen_style" />
+        <activity
+            android:name="com.hermesgamesdk.activity.DownloadActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/qg_dialog_style_fullscreen" >
+        </activity>
+        <activity
+            android:name="com.hermesgamesdk.activity.NoticeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.hermesgamesdk.activity.ScanPayActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/qg_dialog_style_fullscreen" >
+        </activity>
+        <activity
+            android:name="com.hermesgamesdk.activity.GameSliderBarActivityV2"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.hermesgamesdk.activity.TempActivty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/qg_dialog_style_fullscreen" />
+
+        <activity
+            android:name="com.hermesgamesdk.activity.QGVoucherActivty"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- SDK  配置结束 -->
+
+        <activity
+            android:name="com.hermesgamesdk.activity.QGSdkCoinsPayActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/qg_dialog_style_fullscreen_notfloat" >
+        </activity>
+        <activity
+            android:name="com.hermesgamesdk.activity.QGPaySuccessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hermesgamesdk.activity.CpLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.hermesgamesdk.activity.AliWebPayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.hermesgamesdk.activity.WeChatWebPayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.hermesgamesdk.utils.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.hermesgamesdk.utils.PhotoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- Taptap -->
+        <activity
+            android:name="com.taptap.sdk.ui.TapTapActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.taptap.sdk.TapLoginHelperActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+
+        <!-- QK客服组件 -->
+        <activity
+            android:name="com.qk.plugin.customservice.view.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+
+                <!-- 需要将下行的com.qk.customservice.demo替换为游戏的包名 -->
+                <action android:name="action.custom.service.chat.com.tx.jdzj.iqiyi" />
+                <!-- {{#packName:com.quicksdk.qg.test#}} -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qk.plugin.customservice.view.UserDetailActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.qk.plugin.photopicker.view.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.qk.plugin.photopicker.view.PhotoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.qk.plugin.customservice.view.OtherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <service android:name="com.qk.plugin.customservice.service.QKService" >
+        </service>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!-- 第三方登录 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 替换为腾讯的appid   需要cp申请 -->
+                <data android:scheme="tencent101936006" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="AD_APP_ID"
+            android:value="AD34531208533615867880214799073487" />
+
+        <!-- 0表示不支持QQ登录  需要cp申请 -->
+        <meta-data
+            android:name="QQ_APP_ID"
+            android:value="QK101936006" />
+        <!-- 0表示不支持微信登录  需要cp申请 wxce12bb34938c402a-->
+
+        <meta-data
+            android:name="WX_APP_ID"
+            android:value="QKwx36e63475538760fd" />
+        <meta-data
+            android:name="WX_APP_SECRET"
+            android:value="QKb2fb9c3d40af9e57be79cc278666f09b" />
+        <!-- <meta-data
+                 android:name="WX_APP_ID"
+                 android:value="QKwxce12bb34938c402a" />
+             &lt;!&ndash; 微信app-scret 需要cp申请 0e626ee0a705c7418d20205173f57973 &ndash;&gt;
+             <meta-data
+                 android:name="WX_APP_SECRET"
+                 android:value="QK0e626ee0a705c7418d20205173f57973" />-->
+        <meta-data
+            android:name="IQY_APP_ID"
+            android:value="QK0" />
+        <meta-data
+            android:name="ALP_KEY"
+            android:value="QKrFimfItVynBt+MNQbdvdMeP/YbTBScwKgZe8pOSBmJN9vkKPuS6A6pKqykJXR4G/oyLM9/AdH1576WzTT2Aa4XKMrBVoUrk8IaGB+b9l7gVkSyeIIRCXrIahrvgqFG6p9Nu0nXfIpH0083mDMxYfJfkZwrie/JY+MiHp5WqO5mCsNmwFpeVmdnRasDOLn0ZI3SXhQdM243ppR5QyJz47ZypCnRrYJ34xsl2gqLDq9luVQHNvBvtrnwm10xUO+09Lt8j1bNyRIYGtTJ9YKfOJUq+uBc+usKDE71f2eGVoXkML/Lm66/TM/MyKi1reS+f3
+"/>
+
+        <meta-data
+            android:name="TAP_ID"
+            android:value="QKEhiZ7nBH8BWTokeHIB" />
+
+
+        <meta-data
+            android:name="TAP_KEY"
+            android:value="QKSkv7Gr24u4LKYKX3AiyreHYsO9mbvMSC" />
+        <!--<meta-data
+            android:name="ALP_KEY"
+            android:value="QKPHT5jFA9eDgfMrQ0Ejbg6BCWmEVI0ZnQ9kK5zhxtl7JRDP+L1zk/R2TKirUnj6LUnUACqqSEd20x9MKgsa8k2l49tka2Lwy0GzHFNX3vEsnGtExfH7GcpY7E48Dmt/ra+J6Lo2jRx0aHwYmx4VkqB+LEY1jCIKVinw/jybyhyNYoDKkJpNWht+jCeQISMI3MGWxkgTvozftryaVBCarzH59u6cuKU6ngNllMLj+nzsqWDoaOZcJuR7h127xZG8TmlcrDvtorGx71cJK8aTjvgox0tq/qf4vC5NeA3lBl8q+1tSCwzAN11A==" />-->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- WXEntryActivity必须在包名路径下 -->
+
+
+        <!-- 爱奇艺登录   这部分直接复制即可 -->
+
+        <service
+            android:name="org.qiyi.pluginlibrary.install.PluginInstallerService"
+            android:exported="false"
+            android:process=":pluginInstaller" >
+            <intent-filter>
+                <action android:name="com.qiyi.video.plugin.installed.service.INSTALL" />
+            </intent-filter>
+        </service>
+        <service android:name="org.qiyi.pluginlibrary.pm.PluginPackageManagerService" />
+
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxy0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxy1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:process=":plugin1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxy2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:process=":plugin2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:process=":plugin1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:process=":plugin2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyLandscape0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyLandscape1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:process=":plugin1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyLandscape2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:process=":plugin2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyHandleConfigChange0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyHandleConfigChange1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:process=":plugin1" />
+        <activity
+            android:name="org.qiyi.pluginlibrary.component.InstrActivityProxyHandleConfigChange2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:process=":plugin2" />
+
+        <service android:name="org.qiyi.pluginlibrary.component.ServiceProxy0" />
+        <service
+            android:name="org.qiyi.pluginlibrary.component.ServiceProxy1"
+            android:process=":plugin1" />
+        <service
+            android:name="org.qiyi.pluginlibrary.component.ServiceProxy2"
+            android:process=":plugin2" />
+
+        <!-- 手机授权 -->
+        <!--联通电信授权页-->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/authsdk_activity_dialog" ></activity>
+
+        <activity
+            android:name="com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" ></activity>
+
+        <activity
+            android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/authsdk_activity_dialog" ></activity>
+
+    </application>
+</manifest>

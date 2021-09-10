@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qg_base_frame"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/qg_exit_frame"
+        android:layout_height="180dp">
+
+        <TextView
+            android:id="@+id/qg_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:text="@string/qg_exit_realy_exit"
+            android:textColor="@color/qg_light_black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qg_exit_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+
+                android:gravity="center"
+                android:text="@string/qg_exit_exit_cancel"
+                android:textColor="@color/qg_light_black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="22dp"
+                android:layout_marginTop="22dp"
+                android:background="@color/qg_light_black" />
+
+            <TextView
+                android:id="@+id/qg_exit_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/qg_exit_exit_yes"
+                android:textColor="@color/qg_light_orange2"
+                skin:enable="true"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

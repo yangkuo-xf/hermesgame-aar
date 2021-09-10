@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+              android:layout_width="262dp"
+              android:layout_height="150dp"
+              android:background="@drawable/qg_fragment_base_bg_letter"
+              android:orientation="vertical">
+
+
+    <TextView
+            android:id="@+id/qg_auto_login_username"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="29dp"
+            android:textColor="@color/qg_auto_login_text_uid"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text="@string/qg_autologin_username"
+            android:textSize="16sp"/>
+
+
+    <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="22dp">
+        <ImageView
+                android:id="@+id/qg_autologin_pic"
+                android:layout_width="22dp"
+                android:background="@drawable/auto_login_anim"
+                android:layout_gravity="center"
+                skin:enable="true"
+                android:layout_height="22dp"/>
+
+        <TextView
+                android:id="@+id/qg_auto_login_timer"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:text="@string/qg_autologin_timer"
+            skin:enable="true"
+                android:textColor="@color/qg_light_orange2"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+
+    <TextView
+            android:id="@+id/qg_switch_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/qg_autologin_switch_account"
+            android:textColor="@color/qg_auto_login_text_uid"
+            android:textSize="12sp"/>
+    <View
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:background="@color/qg_auto_login_text_uid"
+            android:layout_height="1dp">
+
+    </View>
+
+
+</LinearLayout>

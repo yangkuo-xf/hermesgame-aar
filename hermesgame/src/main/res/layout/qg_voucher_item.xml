@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RelativeLayout
+
+        android:layout_marginLeft="12dp"
+        android:id="@+id/qg_voucher_item_bg"
+        android:background="@drawable/qg_voucher_item_background_por"
+        android:layout_width="128dp"
+        android:layout_height="94dp">
+        <TextView
+            android:id="@+id/qg_voucher_item_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="¥3"
+            android:textColor="@color/qg_btn_white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/qg_voucher_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/qg_voucher_item_amount"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/qg_btn_white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@drawable/qg_voucher_limit_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/qg_voucher_item_check"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/qg_voucher_item_check_bg"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/qg_voucher_item_timelimit"
+           android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+             android:gravity="center"
+            android:text="消费满28元使用"
+            android:textColor="@color/qg_light_gray3"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</LinearLayout>

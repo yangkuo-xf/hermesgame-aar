@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="326dp"
+    android:layout_height="290dp"
+    skin:enable="true"
+    android:background="@drawable/qg_fragment_base_bg_mid"
+    android:orientation="vertical">
+
+    <com.hermesgamesdk.view.QGTitleBar
+        android:id="@+id/qg_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:imagePadding="11dp"
+        app:imageSize="@dimen/qg_layout_height"
+        app:textColor="@color/qg_title_text_color"
+        app:textSize="18dp"
+        app:title="@string/qg_try_play_tips_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp">
+
+        <TextView
+            android:id="@+id/qg_txt_bf_tips"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="@string/qg_bind_failed_tips"
+            android:textColor="@color/qg_light_orange2"
+            skin:enable="true"
+            android:lineSpacingExtra="4dp"
+            android:textSize="14sp" />
+        <!-- 登录按钮 -->
+
+        <Button
+            android:id="@+id/qg_btn_switchotherphone"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qg_layout_height"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+            android:gravity="center"
+            android:text="切换绑定手机号"
+            android:textColor="@drawable/qg_login_button_txt_selector"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/qg_btn_switchtouserbind"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qg_layout_height"
+            android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+            android:gravity="center"
+            android:text="用户名绑定"
+            android:visibility="gone"
+            android:textColor="@drawable/qg_login_button_txt_selector"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

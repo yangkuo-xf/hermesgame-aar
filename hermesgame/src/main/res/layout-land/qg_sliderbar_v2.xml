@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+              android:id="@+id/layout_slider"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/frame_slider"
+                android:layout_width="434dp"
+                android:orientation="vertical"
+                android:background="@color/qg_white"
+                android:layout_height="match_parent">
+            <!--   <ProgressBar
+                     android:id="@+id/progress_slider_load"
+                     android:layout_gravity="center"
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"/>-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:background="@color/qg_white"
+                          android:visibility="gone"
+                          android:id="@+id/qg_web_load_erro">
+                <ImageView
+                        android:background="@drawable/qg_icon_load_data_err"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"/>
+                <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qg_load_erro"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/qg_light_orange"
+                />
+                <Button
+                        android:id="@+id/qg_web_load_erro_retry"
+                        android:layout_width="120dp"
+                        android:text="@string/qg_refresh"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/qg_white"
+                        android:background="@drawable/qg_btn_selector"
+                    skin:enable="true"
+                        android:layout_height="30dp"
+
+                />
+                <Button
+                        android:id="@+id/qg_web_load_erro_close"
+                        android:layout_width="120dp"
+                        android:text="@string/qg_close"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/qg_white"
+                        android:background="@drawable/qg_btn_selector"
+                    skin:enable="true"
+                        android:layout_height="30dp"
+
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_close_layout"
+            android:layout_width="20dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/qg_btn_sliderbar_v2_close"
+                android:layout_width="6dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/qg_sliderbar_v2_close" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+            android:id="@+id/slider_blank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

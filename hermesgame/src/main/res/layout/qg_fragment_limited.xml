@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:id="@+id/layout_find_password"
+    android:layout_width="326dp"
+    android:layout_height="290dp"
+    android:layout_gravity="center"
+    skin:enable="true"
+    android:background="@drawable/qg_fragment_base_bg_mid"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp" >
+
+        <TextView
+            android:id="@+id/qg_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/qg_limited_title"
+            android:textColor="@color/qg_black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/qg_limited_close"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/qg_icon_close" />
+    </RelativeLayout>
+
+    <!-- 文字 -->
+
+    <TextView
+        android:id="@+id/qg_limited_msg"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+    	android:gravity="left"
+        android:lineSpacingExtra="4dp"
+        android:scrollbars="none"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/qg_certification_message"
+        android:textColor="@color/qg_light_gray4"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp" >
+
+        <!-- 实名按钮 -->
+
+        <Button
+            android:id="@+id/qg_dialog_btn_left"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/qg_layout_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+            android:gravity="center"
+            android:text="进行实名"
+            android:textColor="@drawable/qg_login_button_txt_selector"
+            android:textSize="16sp" />
+
+        <!-- 返回登录按钮 -->
+
+        <Button
+            android:id="@+id/qg_dialog_btn_right"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/qg_layout_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/qg_btn_selector"
+            skin:enable="true"
+            android:gravity="center"
+            android:text="切换帐号"
+            android:textColor="@drawable/qg_login_button_txt_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
