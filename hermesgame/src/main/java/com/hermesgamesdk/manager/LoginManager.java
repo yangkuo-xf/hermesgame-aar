@@ -12,9 +12,9 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.bytedance.applog.GameReportHelper;
 import com.hermesgamesdk.QGConfig;
 import com.hermesgamesdk.QGManager;
+import com.hermesgamesdk.RangersAppLog;
 import com.hermesgamesdk.activity.GameSliderBarActivityV2;
 import com.hermesgamesdk.activity.LoginActivity;
 import com.hermesgamesdk.activity.TempActivty;
@@ -265,7 +265,7 @@ public class LoginManager {
             ADP.getInstance().active(QGManager.getUID(), QGManager.getUserName(),"0");
         }
         //内置事件: “注册” ，属性：注册方式，是否成功，属性值为：wechat ，true
-        GameReportHelper.onEventRegister("wechat",true);
+        RangersAppLog.onEventRegister("wechat",true);
 
 
         if (Constant.noticeShowNode == Constant.NOTICE_NODE_AFTER_LOGIN) {

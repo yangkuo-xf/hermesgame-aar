@@ -10,8 +10,6 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.bytedance.applog.GameReportHelper;
-import com.bytedance.applog.WhalerGameHelper;
 import com.hermesgamesdk.activity.GameSliderBarActivityV2;
 import com.hermesgamesdk.activity.TempActivty;
 import com.hermesgamesdk.callback.QGCallBack;

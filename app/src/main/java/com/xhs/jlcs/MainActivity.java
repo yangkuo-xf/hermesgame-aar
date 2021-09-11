@@ -14,8 +14,11 @@ import android.widget.Toast;
 
 import com.hermesgamesdk.QGManager;
 import com.hermesgamesdk.callback.QGCallBack;
+import com.hermesgamesdk.constant.Constant;
 import com.hermesgamesdk.entity.QGOrderInfo;
 import com.hermesgamesdk.entity.QGRoleInfo;
+
+import java.math.BigDecimal;
 
 
 public class MainActivity extends Activity {
@@ -76,6 +79,9 @@ public class MainActivity extends Activity {
                 Log.e("QGManager", msg);
             }
         });
+         RangersAppLog.init(this, "251934", Constant.BYTEDANCE_ID);
+
+
 
 
         //提交角色信息
@@ -150,6 +156,12 @@ public class MainActivity extends Activity {
                 QGManager.pay(MainActivity.this, mRoleInfo, mOrderInfo, new QGCallBack() {
                     @Override
                     public void onSuccess() {
+                        //内置事件 “支付”，属性：商品类型，商品名称，商品ID，商品数量，支付渠道，币种，是否成功（必传），金额（必传）
+                        RangersAppLog.onEventPurchase(mOrderInfo.getOrderSubject(),mOrderInfo.getOrderSubject(), mOrderInfo.getProductOrderId(),mOrderInfo.getCount(),
+                                "wechat","¥", true, new BigDecimal(mOrderInfo.getAmount()).multiply(BigDecimal.valueOf(100)).intValue());
+                        
+                        
+                        
                         Log.e("QGManager", "支付成功");
                     }
 
@@ -198,11 +210,13 @@ public class MainActivity extends Activity {
     protected void onPause() {
         super.onPause();
         QGManager.hideFloat();
+        RangersAppLog.onPause(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        RangersAppLog.onResume(this);
         if (!TextUtils.isEmpty(QGManager.getUID())) {
             QGManager.showFloat(true);
         }

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.bytedance.applog.AppLog;
+import com.hermesgamesdk.RangersAppLog;
 import com.hermesgamesdk.skin.manager.entity.DynamicAttr;
 import com.hermesgamesdk.skin.manager.listener.ISkinUpdate;
 import com.hermesgamesdk.skin.manager.loader.SkinInflaterFactory;
@@ -41,13 +41,13 @@ public class BaseActivity extends Activity implements ISkinUpdate{
 	protected void onResume() {
 		super.onResume();
 		SkinManager.getInstance().attach(this);
-		AppLog.onResume(this);
+		RangersAppLog.onResume(this);
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
-		AppLog.onPause(this);
+		RangersAppLog.onPause(this);
 	}
 
 	@Override

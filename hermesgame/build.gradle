@@ -1,19 +1,19 @@
 apply plugin: 'com.android.library'
-//apply from: 'maven-release-aar.gradle'
 
-apply plugin: 'com.github.dcendents.android-maven'
-//hermesgame-aar
-group='com.github.hermesgame-aar'
+apply from: 'maven-release-aar.gradle'
+
+//apply plugin: 'com.github.dcendents.android-maven'
+//group='com.github.hermesgame-aar'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 28
     buildToolsVersion '28.0.3'
     lintOptions {
         abortOnError false
     }
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 29
+        minSdkVersion 21
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -53,9 +53,9 @@ dependencies {
 
 //    testImplementation 'junit:junit:4.12'
 
-    api ('com.bytedance.applog:RangersAppLog-Lite-cn:5.3.0'){
-        transitive = true
-    }
+//    api ('com.bytedance.applog:RangersAppLog-Lite-cn:5.3.0'){
+//        transitive = true
+//    }
 
 //    implementation 'com.hermesgame:hermesgame:1.0.0'
 

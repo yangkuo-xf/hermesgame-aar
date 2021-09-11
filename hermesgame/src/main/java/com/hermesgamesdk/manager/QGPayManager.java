@@ -22,8 +22,8 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.alipay.sdk.app.PayTask;
-import com.bytedance.applog.GameReportHelper;
 import com.hermesgamesdk.QGManager;
+import com.hermesgamesdk.RangersAppLog;
 import com.hermesgamesdk.activity.AliWebPayActivity;
 import com.hermesgamesdk.activity.GameSliderBarActivityV2;
 import com.hermesgamesdk.activity.PayActivity;
@@ -292,7 +292,7 @@ public class QGPayManager {
 								public void onDismiss() {
 									mPayCallBack.onSuccess();
 									//内置事件 “支付”，属性：商品类型，商品名称，商品ID，商品数量，支付渠道，币种，是否成功（必传），金额（必传）
-									GameReportHelper.onEventPurchase(getOrderInfo().getOrderSubject(),getOrderInfo().getOrderSubject(), getOrderInfo().getProductOrderId(),getOrderInfo().getCount(),
+									RangersAppLog.onEventPurchase(getOrderInfo().getOrderSubject(),getOrderInfo().getOrderSubject(), getOrderInfo().getProductOrderId(),getOrderInfo().getCount(),
 											"wechat","¥", true, new BigDecimal(getOrderInfo().getAmount()).multiply(BigDecimal.valueOf(100)).intValue());
 
 
@@ -371,7 +371,7 @@ public class QGPayManager {
 							public void run() {
 								QGPayManager.getInstance().mPayCallBack.onSuccess();
 								//内置事件 “支付”，属性：商品类型，商品名称，商品ID，商品数量，支付渠道，币种，是否成功（必传），金额（必传）
-								GameReportHelper.onEventPurchase(getOrderInfo().getOrderSubject(),getOrderInfo().getOrderSubject(), getOrderInfo().getProductOrderId(),getOrderInfo().getCount(),
+								RangersAppLog.onEventPurchase(getOrderInfo().getOrderSubject(),getOrderInfo().getOrderSubject(), getOrderInfo().getProductOrderId(),getOrderInfo().getCount(),
 										"wechat","¥", true, new BigDecimal(getOrderInfo().getAmount()).intValue());
 								mActivity.finish();
 							}
